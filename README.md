@@ -4,34 +4,39 @@ Windows-nginx-php setup
 2.	Download php  https://windows.php.net/download#php-8.3
 3.	Now extract in any drive wherever  you want to setup your project 
 like D:/php, D:/nginx
-4.	We will setup the any php framework 
-5.	First I will setup for your example codeigniter 
-6.	Download composer  if you want to download any repository using composer
-7.	Change in nginx.conf
+5.	First I will setup codeigniter framework
+6.	Download composer  if you want to download any repository using composer or download that framework from github.com
+7.	For now i have download the codeigniter 4.4.5 form github.
+8.	Change in nginx.conf or replace the nginx conf file form the this repository.
 
-virtual host 
+create virtual host 
 
-1. Nginx- conf ->
-2. Make server conf file like dashboard.conf
-3. Etc/host 
-127.0.0.1 localhost.example.com C:\Windows\System32\Drivers\etc
-1.	 Open Notepad as an administrator:
-1.	Type Notepad in the Windows search field
-2.	Right-click Notepad in the search results
-3.	Select Run as administrator
-2.	Open the hosts file:
-1.	Select File
-2.	Select Open
-3.	Navigate to C:\Windows\System32\Drivers\etc
-4.	Select All Files
-5.	Select the hosts file
-6.	Click Open
-7.	Make the desired changes:
-8.	Add a new IP address followed by a space and domain name to the bottom of the file
-9.	Use the syntax [ip-address] [hostname-or-domain-name]
-10.	Use the # symbol to include comments
+1. Nginx- conf -> replaced>
+2. Make server conf file like example.conf
+3. add the same virtual host in the following file Etc/host 
+        example           127.0.0.1 localhost.example.com
 
-8.	Batch->start.bat->batch   stop server, restart, start 
+   how you can add this host? follow the steps give below
+   This is file path of the host file  C:\Windows\System32\Drivers\etc.
+  1.	 Open Notepad as an administrator:
+  2.	Type Notepad in the Windows search field
+  3.	Right-click Notepad in the search results
+  4.	Select Run as administrator
+  5.	Open the hosts file:
+  6.	Select File
+  7.	Select Open
+  8.	Navigate to C:\Windows\System32\Drivers\etc
+  9.	Select All Files
+  10.	Select the hosts file
+  11.	Click Open
+  12.	Make the desired changes:
+  13.	Add a new IP address followed by a space and domain name to the bottom of the file
+  14.Use the syntax [ip-address] [hostname-or-domain-name]
+
+8.	Now accordding folder structure add the batch file under nginx folder 
+    Batch->start.bat->batch   stop server, restart, start 
+
+checkout the folder structure image 
 
 
 
